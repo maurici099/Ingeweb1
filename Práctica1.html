@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Acceso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        .contenedor {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 18px;
+            color: #333;
+        }
+        .campo {
+            margin-bottom: 14px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .btn-login {
+            background-color: #007bff;
+        }
+        .btn-olvide {
+            background-color: #28a745;
+        }
+        .btn-registro {
+            background-color: #17a2b8;
+        }
+        .enlaces {
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .enlaces a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .enlaces a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. LOGIN -->
+    <div id="seccion-login" class="contenedor">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="login-usuario">Usuario</label>
+                <input type="text" id="login-usuario" name="usuario" required>
+            </div>
+
+            <div class="campo">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn-login">Enviar</button>
+
+            <div class="enlaces">
+                <a href="#seccion-olvide">Olvidé password</a>
+                <a href="#seccion-registrarse">Registrarse</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- 2. OLVIDÉ PASSWORD -->
+    <div id="seccion-olvide" class="contenedor">
+        <h2>Olvidé Password</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="olvide-usuario">Usuario</label>
+                <input type="text" id="olvide-usuario" name="usuario" required>
+            </div>
+
+            <div class="campo">
+                <label for="olvide-password">Password</label>
+                <input type="password" id="olvide-password" name="password" required>
+            </div>
+
+            <div class="campo">
+                <label for="olvide-confirmar">Confirmar Password</label>
+                <input type="password" id="olvide-confirmar" name="confirmar_password" required>
+            </div>
+
+            <button type="submit" class="btn-olvide">Enviar</button>
+        </form>
+    </div>
+
+    <!-- 3. REGISTRARSE -->
+    <div id="seccion-registrarse" class="contenedor">
+        <h2>Registrarse</h2>
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="reg-nombre">Nombre</label>
+                <input type="text" id="reg-nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="reg-usuario">Usuario</label>
+                <input type="text" id="reg-usuario" name="usuario" required>
+            </div>
+
+            <div class="campo">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="password" required>
+            </div>
+
+            <div class="campo">
+                <label for="reg-confirmar">Confirmar Password</label>
+                <input type="password" id="reg-confirmar" name="confirmar_password" required>
+            </div>
+
+            <button type="submit" class="btn-registro">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
