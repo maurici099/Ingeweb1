@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Productos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Productos</h1>
+        <p>Explora nuestros artículos disponibles. Haz clic en las estrellas para calificar cada producto.</p>
+    </header>
+
+    <main>
+        <table border="1" cellpadding="12" cellspacing="0" width="100%">
+            <!-- FILA 1 -->
+            <tr>
+                <!-- PRODUCTO 1 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-1" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23dbeafe'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%231e3a8a'>Audífonos Pro - Principal</text></svg>" alt="Audífonos Pro Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23dbeafe'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%231e3a8a'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-1', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23bfdbfe'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%231e3a8a'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-1', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%2393c5fd'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%231e3a8a'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-1', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%2360a5fa'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-1', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Audífonos Inalámbricos Pro</h3>
+                                <p><strong>Descripción:</strong> Cancelación activa de ruido, batería de 30 horas y micrófono integrado.</p>
+                                <p><strong>Tiempo de entrega:</strong> 2 días hábiles</p>
+                                <p><strong>Costo:</strong> $1,499.00 MXN</p>
+                                <p><strong>Descuento:</strong> 15% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Carlos Mendoza</strong> (12/11/2026): Excelente sonido y muy cómodos para trabajar.</li>
+                                    <li><strong>Ana Sofía Ruiz</strong> (18/11/2026): La batería dura muchísimo, llegaron antes de lo esperado.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- PRODUCTO 2 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-2" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23dcfce7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%2314532d'>Teclado Mecánico - Principal</text></svg>" alt="Teclado Mecánico Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23dcfce7'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%2314532d'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-2', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23bbf7d0'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%2314532d'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-2', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%2386efac'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%2314532d'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-2', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%234ade80'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-2', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Teclado Mecánico RGB</h3>
+                                <p><strong>Descripción:</strong> Switches táctiles silenciosos, retroiluminación configurable y cable trenzado USB-C.</p>
+                                <p><strong>Tiempo de entrega:</strong> 3 días hábiles</p>
+                                <p><strong>Costo:</strong> $1,150.00 MXN</p>
+                                <p><strong>Descuento:</strong> 10% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Luis Herrera</strong> (05/11/2026): Muy buena respuesta al escribir y materiales sólidos.</li>
+                                    <li><strong>Fernanda López</strong> (20/11/2026): El tamaño compacto deja mucho espacio en el escritorio.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- PRODUCTO 3 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-3" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23fef3c7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%2378350f'>Mouse Ergonómico - Principal</text></svg>" alt="Mouse Ergonómico Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fef3c7'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%2378350f'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-3', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fde68a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%2378350f'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-3', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fcd34d'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%2378350f'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-3', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fbbf24'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-3', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Mouse Ergonómico Vertical</h3>
+                                <p><strong>Descripción:</strong> Diseño vertical para reducir fatiga en la muñeca, sensor óptico de 4000 DPI.</p>
+                                <p><strong>Tiempo de entrega:</strong> 1 día hábil</p>
+                                <p><strong>Costo:</strong> $680.00 MXN</p>
+                                <p><strong>Descuento:</strong> 20% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Jorge Ramírez</strong> (10/11/2026): Toma un día acostumbrarse, pero alivia mucho la muñeca.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- FILA 2 -->
+            <tr>
+                <!-- PRODUCTO 4 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-4" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23fce7f3'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%23831843'>Monitor 27 4K - Principal</text></svg>" alt="Monitor 27 4K Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fce7f3'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23831843'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-4', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fbcfe8'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23831843'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-4', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23f9a8d4'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23831843'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-4', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23f472b6'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-4', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Monitor IPS 27" 4K UHD</h3>
+                                <p><strong>Descripción:</strong> Panel IPS antirreflejo, bordes ultradelgados, HDMI 2.1 y DisplayPort.</p>
+                                <p><strong>Tiempo de entrega:</strong> 4 días hábiles</p>
+                                <p><strong>Costo:</strong> $5,890.00 MXN</p>
+                                <p><strong>Descuento:</strong> 12% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Mariana Torres</strong> (02/11/2026): Colores súper nítidos para diseño y programación.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- PRODUCTO 5 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-5" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23e0e7ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%23312e81'>Webcam Full HD - Principal</text></svg>" alt="Webcam Full HD Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23e0e7ff'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23312e81'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-5', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23c7d2fe'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23312e81'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-5', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23a5b4fc'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23312e81'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-5', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23818cf8'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-5', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Webcam Full HD 1080p</h3>
+                                <p><strong>Descripción:</strong> Enfoque automático, tapa de privacidad física y doble micrófono estéreo.</p>
+                                <p><strong>Tiempo de entrega:</strong> 2 días hábiles</p>
+                                <p><strong>Costo:</strong> $790.00 MXN</p>
+                                <p><strong>Descuento:</strong> 5% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Diego Castillo</strong> (14/11/2026): Buena imagen incluso con poca luz en el cuarto.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- PRODUCTO 6 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-6" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23f3e8ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%23581c87'>SSD NVMe 1TB - Principal</text></svg>" alt="SSD NVMe 1TB Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23f3e8ff'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23581c87'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-6', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23e9d5ff'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23581c87'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-6', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23d8b4fe'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23581c87'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-6', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23c084fc'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-6', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Unidad SSD NVMe M.2 1TB</h3>
+                                <p><strong>Descripción:</strong> Velocidad de lectura hasta 5000 MB/s, formato M.2 2280 con disipador térmico.</p>
+                                <p><strong>Tiempo de entrega:</strong> 2 días hábiles</p>
+                                <p><strong>Costo:</strong> $1,320.00 MXN</p>
+                                <p><strong>Descuento:</strong> 25% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Valeria Gómez</strong> (19/11/2026): Mi laptop enciende en menos de 8 segundos ahora.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- FILA 3 -->
+            <tr>
+                <!-- PRODUCTO 7 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-7" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23ffedd5'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%237c2d12'>Silla Ergonómica - Principal</text></svg>" alt="Silla Ergonómica Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23ffedd5'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%237c2d12'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-7', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fed7aa'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%237c2d12'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-7', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fdba74'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%237c2d12'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-7', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23fb923c'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-7', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Silla Ergonómica de Oficina</h3>
+                                <p><strong>Descripción:</strong> Respaldo de malla transpirable, soporte lumbar ajustable y reposabrazos 3D.</p>
+                                <p><strong>Tiempo de entrega:</strong> 5 días hábiles</p>
+                                <p><strong>Costo:</strong> $3,450.00 MXN</p>
+                                <p><strong>Descuento:</strong> 18% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Ricardo Morales</strong> (08/11/2026): Fácil de armar y muy cómoda para jornadas largas.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- PRODUCTO 8 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-8" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23ccfbf1'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%23134e4a'>Hub USB-C 8 en 1 - Principal</text></svg>" alt="Hub USB-C 8 en 1 Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23ccfbf1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23134e4a'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-8', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%2399f6e4'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23134e4a'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-8', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%235eead4'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23134e4a'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-8', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%232dd4bf'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-8', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Hub Adaptador USB-C 8 en 1</h3>
+                                <p><strong>Descripción:</strong> Salida HDMI 4K, 3 puertos USB 3.0, lector SD/microSD, Ethernet RJ45 y carga PD 100W.</p>
+                                <p><strong>Tiempo de entrega:</strong> 1 día hábil</p>
+                                <p><strong>Costo:</strong> $540.00 MXN</p>
+                                <p><strong>Descuento:</strong> 10% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="vacia" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Paola Jiménez</strong> (21/11/2026): Funciona perfecto sin instalar controladores adicionales.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- PRODUCTO 9 -->
+                <td width="33%" valign="top">
+                    <table border="0" cellpadding="4" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center">
+                                <img id="img-principal-9" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='150'><rect width='100%' height='100%' fill='%23f1f5f9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%230f172a'>Mochila Antirrobo - Principal</text></svg>" alt="Mochila Antirrobo Principal" width="220" height="150">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23f1f5f9'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%230f172a'>Vista 1</text></svg>" alt="Vista 1" width="50" height="40" onclick="cambiarImagen('img-principal-9', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23e2e8f0'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%230f172a'>Vista 2</text></svg>" alt="Vista 2" width="50" height="40" onclick="cambiarImagen('img-principal-9', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%23cbd5e1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%230f172a'>Vista 3</text></svg>" alt="Vista 3" width="50" height="40" onclick="cambiarImagen('img-principal-9', this.src)">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='40'><rect width='100%' height='100%' fill='%2394a3b8'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='10' fill='%23ffffff'>Vista 4</text></svg>" alt="Vista 4" width="50" height="40" onclick="cambiarImagen('img-principal-9', this.src)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Mochila Ejecutiva Antirrobo</h3>
+                                <p><strong>Descripción:</strong> Compartimento acolchado para laptop de 16", tela impermeable y puerto USB externo.</p>
+                                <p><strong>Tiempo de entrega:</strong> 3 días hábiles</p>
+                                <p><strong>Costo:</strong> $890.00 MXN</p>
+                                <p><strong>Descuento:</strong> 15% de descuento</p>
+                                <p>
+                                    <strong>Calificación:</strong><br>
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 1" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 2" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 3" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 4" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>" alt="Estrella 5" width="24" height="24" data-estado="llena" onclick="alternarEstrella(this)">
+                                </p>
+                                <hr>
+                                <strong>Comentarios:</strong>
+                                <ul>
+                                    <li><strong>Eduardo Méndez</strong> (22/11/2026): Muy resistente al agua y cabe perfectamente mi equipo.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <script>
+        var ESTRELLA_LLENA = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='%23f59e0b' stroke='%23b45309' stroke-width='1.5'/></svg>";
+        var ESTRELLA_VACIA = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><polygon points='12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9' fill='none' stroke='%23b45309' stroke-width='1.5'/></svg>";
+
+        function alternarEstrella(elemento) {
+            if (elemento.getAttribute("data-estado") === "llena") {
+                elemento.src = ESTRELLA_VACIA;
+                elemento.setAttribute("data-estado", "vacia");
+            } else {
+                elemento.src = ESTRELLA_LLENA;
+                elemento.setAttribute("data-estado", "llena");
+            }
+        }
+
+        function cambiarImagen(idPrincipal, nuevaSrc) {
+            document.getElementById(idPrincipal).src = nuevaSrc;
+        }
+    </script>
+
+</body>
+</html>
